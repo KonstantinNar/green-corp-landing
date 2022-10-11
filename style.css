@@ -1,0 +1,84 @@
+body {
+    font-family: 'Raleway', sans-serif;
+    color: #213053;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #213053;
+}
+
+.button {
+    font-family: 'Raleway', sans-serif;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    background-color: #23a030;
+    box-shadow: 0 16px 36px rgb(52 213 68 / 22%);
+
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.header__logo {
+    height: 30px;
+}
+
+.header__contacts {
+    font-size: 15px;
+    font-weight: 600;
+    margin-right: 25px;
+}
+
+.header__button {
+    font-size: 15px;
+    border-radius: 15px;
+    padding: 15px;
+}
+
+.offer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 115px 0;
+    background: url('img/back.png') no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.offer__left {
+    max-width: 550px;
+}
+
+.offer__title {
+    font-size: 70px;
+    line-height: 76px;
+}
+
+.offer__subtitle {
+    font-size: 18px;
+    line-height: 30px;
+    opacity: 0.8;
+}
+
+.offer__button {
+    font-size: 18px;
+    border-radius: 20px;
+    padding: 20px 25px;
+    margin-top: 20px;
+}
+
+.offer__img {
+    width: 500px;
+}
+
+.offer__sun-img {
+    width: 100px;
+    height: 100px;
+}
