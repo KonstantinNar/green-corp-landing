@@ -41,6 +41,10 @@ input {
     justify-content: space-between;
     align-items: center;
     padding: 20px;
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+    z-index: 1;
 }
 
 .header__logo {
@@ -92,6 +96,8 @@ input {
 .offer__sun-img {
     width: 100px;
     height: 100px;
+    animation: rotation 10s linear infinite;
+    position: absolute;
 }
 
 .form {
@@ -182,4 +188,88 @@ input {
     margin-top: 40px;
     text-align: center;
     opacity: 0.5;
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@media (max-width: 1024px) {
+    .offer {
+        padding: 115px 20px;
+    }
+
+    .offer__title {
+        font-size: 36px;
+        line-height: 40px;
+    }
+
+    .offer__sun-img {
+        width: 75px;
+        height: 75px;
+    }
+
+    .offer__img {
+        width: 280px;
+    }
+}
+
+@media (max-width: 720px) {
+    .header {
+        padding: 10px;
+    }
+
+    .header__logo {
+        height: 20px;
+    }
+
+    .header a {
+        margin-right: 10px;
+    }
+
+    .offer {
+        padding: 50px 10px;
+        flex-direction: column-reverse;
+    }
+
+    .offer__title {
+        font-size: 36px;
+        line-height: 40px;
+    }
+
+    .offer__sun-img {
+        width: 75px;
+        height: 75px;
+    }
+
+    .offer__img {
+        width: 280px;
+    }
+
+    .form {
+        padding: 50px 10px;
+    }
+
+    .form__container {
+        width: 100%;
+    }
+
+    .form__title {
+        font-size: 36px;
+        line-height: 40px;
+    }
+
+    .footer {
+        padding: 50px 10px;
+    }
+
+    .footer__container {
+        flex-direction: column;
+    }
 }
